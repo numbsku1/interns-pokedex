@@ -74,4 +74,8 @@ if (nodeEnv !== 'test') {
 }
 
 // Export for testing
+<<<<<<< arapoc/pokedex-pull-request
 export default app;
+=======
+export default app;
+>>>>>>> main

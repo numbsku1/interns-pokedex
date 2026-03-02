@@ -158,6 +158,7 @@ export const searchPokemon = async (query) => {
 export const getPokemonTypes = async () => {
   const types = await pokemonRepository.getPokemonTypes();
 
+<<<<<<< arapoc/pokedex-pull-request
   return types
     // Remove special types
     .filter((t) => t.name !== 'unknown' && t.name !== 'shadow')
@@ -166,6 +167,18 @@ export const getPokemonTypes = async () => {
       name: t.name,
       displayName: formatName(t.name)
     }));
+=======
+  return (
+    types
+      // Remove special types
+      .filter((t) => t.name !== 'unknown' && t.name !== 'shadow')
+      // Format for display
+      .map((t) => ({
+        name: t.name,
+        displayName: formatName(t.name)
+      }))
+  );
+>>>>>>> main
 };
 
 export const getPokemonByType = async (
@@ -199,4 +212,8 @@ export const getPokemonByType = async (
     hasNextPage: offset + limit < pokemonList.length,
     hasPrevPage: page > 1
   };
+<<<<<<< arapoc/pokedex-pull-request
 };
+=======
+};
+>>>>>>> main

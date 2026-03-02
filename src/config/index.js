@@ -18,4 +18,8 @@ export const config = {
     defaultLimit: parseInt(process.env.DEFAULT_PAGE_LIMIT, 10) || 20,
     maxSearchLimit: parseInt(process.env.MAX_SEARCH_LIMIT, 10) || 1000
   }
+<<<<<<< arapoc/pokedex-pull-request
 };
+=======
+};
+>>>>>>> main
